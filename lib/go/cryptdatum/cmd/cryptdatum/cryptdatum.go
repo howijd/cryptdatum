@@ -13,7 +13,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/howijd/cryptdatum"
+	"github.com/howijd/cryptdatum/lib/go/cryptdatum"
 )
 
 var verboseFlag = flag.Bool("v", false, "verbose output")

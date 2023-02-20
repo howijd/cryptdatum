@@ -13,7 +13,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/howijd/cryptdatum/tests/spec"
+	"github.com/howijd/cryptdatum/spec"
 )
 
 func main() {
@@ -25,7 +25,7 @@ func main() {
 
 	for _, testdataFunc := range testdataFuncs {
 		data, name, err := testdataFunc()
-		fpath := filepath.Join("testdata/v1", name)
+		fpath := filepath.Join("v1/testdata", name)
 		if err != nil {
 			log.Printf("failed to create testdata for, err=\"%s\" file=\"%s\"\n", err, fpath)
 			os.Exit(1)
